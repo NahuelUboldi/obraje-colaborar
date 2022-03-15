@@ -1,0 +1,35 @@
+@use "custom";
+
+//components
+@use "./components/modal-lightbox";
+
+//sections
+@use "./sections/header";
+@use "./sections/objetivos";
+@use "./sections/por-que";
+@use "./sections/construimos";
+@use "./sections/estamos-construyendo";
+@use "./sections/obra-global";
+@use "./sections/footer";
+@use "./sections/colaborar";
+
+//all
+.title {
+  width: 100%;
+}
+.line {
+  width: 100%;
+  max-width: 300px;
+  height: 5px;
+  background-color: #003882;
+  border-radius: 0.1rem;
+}
+.line > div {
+  height: 20px;
+  width: 50px;
+  background-color: #003882;
+  border-radius: 0.1rem;
+}
+li {
+  margin-bottom: 0.5rem;
+}

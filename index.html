@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+
+    <title>El Obraje Nuevo Edificio</title>
+    
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <!-- ////// START HEADER ////// -->
+    <header id="header">
+      <!--start navbar-->
+      <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-transparent">
+        <div class="container">
+          <a href="index.html" class="navbar-brand">
+            <img src="./assets/img/logo.svg" alt="" />
+            <span>Instituto El Obraje</span></a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mx-4">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#objetivos"
+                  >Objetivos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#por-que-title"
+                  >¿Por qué necesitamos tu ayuda?</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#construimos-title"
+                  >Ya construimos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#estamos-construyendo-title"
+                  >Etapa Actual</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#obra-global-title"
+                  >La Obra</a
+                >
+              </li>
+            </ul>
+            <a id="btn-colaborar" href="#colaborar-title">
+              <button class="btn btn-danger text-white px-4 fw-bold">Colaborar</button>
+            </a>
+          </div>
+        </div>
+      </nav>
+      <!--end navbar-->
+      <!--start hero-->
+      <div class="container py-sm-1 py-md-4">
+        <div class="row py-sm-1 py-md-4">
+          <div
+            class="
+              col-md-6
+              d-flex
+              flex-column
+              justify-content-center
+              py-2 py-md-4
+              pe-5
+              text-center text-md-start
+            "
+          >
+            <p class="h2 fw-bold hero-item">
+              Estamos construyendo un
+              <span class="text-primary">nuevo edificio</span> para que nuestros
+              hijos puedan tener la mejor educación.
+            </p>
+            <p class="lead py-3 hero-item">
+              Contamos con tu colaboración para seguir adelante.
+            </p>
+            <div>
+              <a href="#colaborar-title">
+                <button class="btn btn-danger text-white fw-bold px-4 hero-btn-colaborar">
+                  Colaborar con El Obraje
+                </button>
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="
+              col-md-6
+              d-flex
+              flex-column
+              justify-content-center
+              py-2 py-md-4
+              position-relative
+            "
+          >
+            <div class="position-absolute" id="svg-container">
+              <svg
+              id="yellow-blob-01"
+                width="409"
+                height="388"
+                viewBox="0 0 409 388"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M318.514 60.32C357.882 90.882 399.84 121.962 407.092 159.776C414.862 197.59 388.444 242.138 358.918 277.88C329.91 313.104 297.794 340.04 257.908 360.242C218.54 380.444 171.92 394.43 130.998 383.552C90.076 372.674 54.334 336.932 29.988 294.974C6.15999 252.498 -6.79001 204.324 5.12399 164.438C17.556 124.552 54.852 93.472 91.63 62.91C128.926 31.83 166.222 1.26798 203.518 0.749981C240.814 0.231981 278.628 30.276 318.514 60.32Z"
+                  fill="#FFC52C"
+                />
+              </svg>
+            </div>
+            <img
+              id="hero-img"
+              src="./assets/img/hero.jpg"
+              alt="alumnos de la escuela técnica"
+              class="ms-auto"
+            />
+          </div>
+        </div>
+      </div>
+      <!--end hero-->
+    </header>
+    <!-- ////// END HEADER ////// -->
+
+    <!-- ////// MAIN ////// -->
+    <main>
+      <div id="modal-lightbox">
+        <i class="fas fa-times close-x-icon"></i>
+        <div class="content"></div>
+      </div>
+      <!-- ////// START OBJETIVOS ////// -->
+      <section id="objetivos" class="mt-5">
+        <div class="container">
+          <!--title-->
+          <div class="title my-5 d-flex flex-column align-items-center">
+            <h2
+              class="h1 text-center fw-bold pt-2 pt-md-5"
+              id="objetivos-title"
+            >
+              Objetivos de la Obra
+            </h2>
+            <div class="line d-flex justify-content-center">
+              <div></div>
+            </div>
+          </div>
+          <!--end title-->
+          <!--content-->
+          <div class="row align-items-top">
+            <!--start objetivo-->
+            <div
+              id="objetive"
+              class="
+                col-12 col-md-4
+                d-flex
+                flex-column
+                py-2 py-md-5
+                align-items-center
+              "
+            >
+              <img src="./assets/img/obj1.svg" alt="" class="py-3" />
+              <p class="text-center">
+                Reunir a todos nuestros alumnos en un mismo predio
+              </p>
+            </div>
+            <!--end objetivo-->
+            <!--start objetivo-->
+            <div
+              id="objetive"
+              class="
+                col-12 col-md-4
+                d-flex
+                flex-column
+                align-items-center
+                py-2 py-md-5
+              "
+            >
+              <img src="./assets/img/obj2.svg" alt="" class="py-3" />
+              <p class="text-center">
+                Ofrecer las mejores condiciones para aprender
+              </p>
+            </div>
+            <!--end objetivo-->
+            <!--start objetivo-->
+            <div
+              id="objetive"
+              class="
+                col-12 col-md-4
+                d-flex
+                flex-column
+                align-items-center
+                py-2 py-md-5
+              "
+            >
+              <img src="./assets/img/obj3.svg" alt="" class="py-3" />
+              <p class="text-center">Seguir creciendo como institución</p>
+            </div>
+            <!--end objetivo-->
+          </div>
+        </div>
+      </section>
+      <!-- ////// END OBJETIVOS ////// -->
+
+      <!-- ////// START POR QUÉ ////// -->
+      <section id="por-que">
+        <svg class="mb-3" viewBox="0 0 490.73213 46.755496">
+          <g transform="translate(405.48529,1035.4856)">
+            <path
+              d="m -405.48529,-1035.4856 490.732116,0 0,18.1543 c -80.1497186,54.25788 -282.497636,21.2313 -490.732116,-16 z"
+              style="fill: #ffffff"
+            />
+          </g>
+        </svg>
+        <!--title-->
+        <div class="title my-2 my-md-5 d-flex flex-column align-items-center">
+          <h2 class="h1 text-center fw-bold pt-2 pt-md-5" id="por-que-title">
+            ¿Por qué necesitamos tu ayuda?
+          </h2>
+          <div class="line d-flex justify-content-center">
+            <div></div>
+          </div>
+        </div>
+        <!--end title-->
+        <!--content-->
+        <div class="container">
+          <ul class="py-5">
+            <li>
+              Porque la mayor parte de
+              <strong>la financiación proviene de las cuotas escolares</strong>
+              y la pandemia redujo considerablemente la cantidad de familias que
+              se mantienen al día con los pagos.
+            </li>
+            <li>
+              Porque
+              <strong
+                >no podemos realizar otras actividades para recaudar
+                fondos</strong
+              >
+              como los asados con cuero o los locros que organizábamos años
+              anteriores.
+            </li>
+            <li>
+              Porque <strong>no hemos recibido aportes estatales</strong>, ni
+              ayuda de ningún gobierno para la construcción.
+            </li>
+            <li>
+              Porque
+              <strong
+                >ya construimos los edificios del jardín y el secundario</strong
+              >
+              y demostramos que si todos nos ponemos manos a la obra se pueden
+              conseguir grandes cosas.
+            </li>
+            <li>
+              Porque
+              <strong
+                >El obraje crece gracias a la ayuda de su gran comunidad
+                educativa</strong
+              >. Son las familias, los docentes, los alumnos y ex alumnos
+              quienes impulsan el colegio hacia adelante.
+            </li>
+          </ul>
+        </div>
+        <!--content-->
+        <svg viewBox="0 0 490.73213 51.784289">
+          <g transform="translate(405.48529,1040.5144)">
+            <path
+              d="m -405.48529,-988.7301 490.732116,0 0,-4.1543 c -257.149716,-8.2579 -349.497636,-91.2313 -490.732116,-17 z"
+              style="fill: #ffffff"
+            />
+          </g>
+        </svg>
+      </section>
+      <!-- ////// END POR QUÉ ////// -->
+
+      <!-- ////// START CONSTRUIMOS ////// -->
+      <section id="construimos" class="pb-5">
+        <!--title-->
+        <div class="title mb-4 mb-md-5 d-flex flex-column align-items-center">
+          <h2
+            class="h1 text-center fw-bold pt-2 pt-md-5"
+            id="construimos-title"
+          >
+            Ya construimos
+          </h2>
+          <div class="line d-flex justify-content-center">
+            <div></div>
+          </div>
+        </div>
+        <!--end title-->
+        <!--content-->
+        <div class="container position-relative">
+          <div class="bg-svg">
+            <svg
+              width="409"
+              height="388"
+              viewBox="0 0 409 388"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M318.514 60.32C357.882 90.882 399.84 121.962 407.092 159.776C414.862 197.59 388.444 242.138 358.918 277.88C329.91 313.104 297.794 340.04 257.908 360.242C218.54 380.444 171.92 394.43 130.998 383.552C90.076 372.674 54.334 336.932 29.988 294.974C6.15999 252.498 -6.79001 204.324 5.12399 164.438C17.556 124.552 54.852 93.472 91.63 62.91C128.926 31.83 166.222 1.26798 203.518 0.749981C240.814 0.231981 278.628 30.276 318.514 60.32Z"
+                fill="#FFC52C"
+              />
+            </svg>
+          </div>
+          <div class="slider-container">
+            <div class="slider">
+              <!--slide-->
+              <div class="slide px-1">
+                <div class="row">
+                  <div class="col-md-6 pe-md-3 my-3 my-md-5 my-md-0">
+                    <img src="./assets/img/slider/construimos-01.jpg" alt="" />
+                  </div>
+                  <div
+                    class="
+                      col-md-6
+                      ps-md-3
+                      d-flex
+                      flex-column
+                      justify-content-center
+                    "
+                  >
+                    <h3 class="h2 fw-bold">Edificio del secundario</h3>
+                    <p class="my-2">
+                      Moderno edificio de dos pisos que cuenta con 28 aulas,
+                      sala de reuniones, oficinas para administración, dos
+                      laboratorios químicos, un aula de computación, además de
+                      un taller de 1800 m² con espacio para salas de
+                      carpintería, torno, soldadura y todo lo necesario para
+                      asegurar una formación técnica de calidad.
+                    </p>
+                    <div class="btns-arrows-container">
+                      <div>
+                        <!-- <button class="btn btn-primary px-2 my-2 masinfo secundario">
+                          Más info
+                        </button> -->
+                      </div>
+
+                      <div class="arrows fs-2">
+                        <i class="fas fa-chevron-left me-3"></i>
+                        <i class="fas fa-chevron-right ms-3 active"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--end slide-->
+              <!--slide-->
+              <div class="slide px-1">
+                <div class="row">
+                  <div class="col-md-6 pe-md-3 my-3 my-md-5 my-md-0">
+                    <img src="./assets/img/slider/construimos-02.jpg" alt="" />
+                  </div>
+                  <div
+                    class="
+                      col-md-6
+                      ps-md-3
+                      d-flex
+                      flex-column
+                      justify-content-center
+                    "
+                  >
+                    <h3 class="h2 fw-bold">Edificio del Nivel Inicial</h3>
+                    <p class="my-2">
+                      El edificio del jardín está acondicionado para que los más
+                      pequeños cuenten con un espacio óptimo para crecer y
+                      desarrollarse. Las aulas, son espaciosas y adaptadas para
+                      atender a las necesidades de los niños. También cuentan
+                      con un amplio patio interior para que puedan realizar
+                      actividades sociales, artísticas y físicas.
+                    </p>
+                    <div class="btns-arrows-container">
+                      <div>
+                        <!-- <button class="btn btn-primary px-2 my-2 masinfo jardin">
+                          Más info
+                        </button> -->
+                      </div>
+                      <div class="arrows fs-3 text-primary">
+                        <i class="fas fa-chevron-left me-3 active"></i>
+                        <i class="fas fa-chevron-right ms-3"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--end slide-->
+            </div>
+          </div>
+        </div>
+        <!--end content-->
+      </section>
+      <!-- ////// END CONSTRUIMOS ////// -->
+
+      <!-- ////// START ESTAMOS CONSTRUYENDO ////// -->
+      <section id="estamos-construyendo" class="py-md-3">
+        <div class="container">
+          <!--title-->
+          <div class="title my-4 my-md-5 d-flex flex-column align-items-center">
+            <h2
+              class="h1 text-center fw-bold pt-2 pt-md-5"
+              id="estamos-construyendo-title"
+            >
+              Estamos construyendo
+            </h2>
+            <div class="line d-flex justify-content-center">
+              <div></div>
+            </div>
+          </div>
+          <!--end title-->
+          <div class="content">
+            <div class="row">
+              <h3 class="h2 fw-bold text-primary">
+                Edificio del nivel primario
+              </h3>
+              <hr />
+              <div class="col-md-8">
+                <p class="">
+                  Estamos en pleno proceso de construcción del edificio del
+                  nivel primario que permitirá unir a los tres niveles
+                  educativos de la institución en un mismo predio.
+                </p>
+                <p class="">
+                  Este nuevo edificio prevé un espacio cerrado de más de 1800 m²
+                  donde funcionarán 13 aulas más dirección, vicedirección y
+                  espacios comunes.
+                </p>
+              </div>
+              <div class="col-md-4 position-relative">
+                <i class="fas fa-chevron-left arrow-left"></i>
+                <i class="fas fa-chevron-right arrow-right"></i>
+                <div class="img-container">
+                  <div class="row">
+                    <div class="col-sm-4 uno">
+                      <img
+                        src="./assets/img/carousel/01-sm.jpg"
+                        data-num="02"
+                        alt="Edificio de escuela primaria técnica"
+                      />
+                    </div>
+                    <div class="col-sm-4 dos">
+                      <img
+                        src="./assets/img/carousel/02-sm.jpg"
+                        data-num="02"
+                        alt="Nuevo edificio de la escuela parroquial El Obraje"
+                      />
+                    </div>
+                    <div class="col-sm-4 tres">
+                      <img
+                        src="./assets/img/carousel/03-sm.jpg"
+                        data-num="03"
+                        alt="Construcción de Colegio Tecnico de Alta Gracia"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ////// END ESTAMOS CONSTRUYENDO ////// -->
+
+      <!-- ////// START OBRA GLOBAL ////// -->
+      <section id="obra-global" class="my-5">
+        <svg
+          id="visual"
+          viewBox="0 0 900 100"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          version="1.1"
+        >
+          <rect x="0" y="0" width="900" height="100" fill="#FFFFFF"></rect>
+          <path
+            d="M0 54L50 59.5C100 65 200 76 300 72.2C400 68.3 500 49.7 600 40.3C700 31 800 31 850 31L900 31L900 101L850 101C800 101 700 101 600 101C500 101 400 101 300 101C200 101 100 101 50 101L0 101Z"
+            fill="#E9ECEF"
+            stroke-linecap="round"
+            stroke-linejoin="miter"
+          ></path>
+        </svg>
+        <div class="global-modal"></div>
+        <div class="container">
+          <!--title-->
+          <div class="title my-4 my-md-5 d-flex flex-column align-items-center">
+            <h2
+              class="h1 text-center fw-bold pt-2 pt-md-5"
+              id="obra-global-title"
+            >
+              El Proyecto Global
+            </h2>
+            <div class="line d-flex justify-content-center">
+              <div></div>
+            </div>
+          </div>
+          <!--end title-->
+          <div class="row">
+            <div class="col-md-6 my-2">
+              <p class="lead">
+                Además de los edificios de los tres niveles educativos, la obra
+                global prevé espacios cubiertos para el jardín, el primario y el
+                secundario, además de un salón de usos múltiples, una sala de
+                multimedia, una gran biblioteca, una capilla. En total, el
+                proyecto tendrá más de 17.000 m² construidos.
+              </p>
+            </div>
+            <div class="col-md-6 my-2">
+              <img
+                class="croquis-img"
+                src="./assets/img/obra-global/croquis-sm.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+
+        <svg
+          id="visual"
+          viewBox="0 0 900 100"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          version="1.1"
+        >
+          <rect x="0" y="0" width="900" height="100" fill="#FFFFFF"></rect>
+          <path
+            d="M0 68L50 65.8C100 63.7 200 59.3 300 48.2C400 37 500 19 600 12.8C700 6.7 800 12.3 850 15.2L900 18L900 0L850 0C800 0 700 0 600 0C500 0 400 0 300 0C200 0 100 0 50 0L0 0Z"
+            fill="#E9ECEF"
+            stroke-linecap="round"
+            stroke-linejoin="miter"
+          ></path>
+        </svg>
+      </section>
+      <!-- ////// END OBRA GLOBAL ////// -->
+
+      <!-- ////// START COLABORAR ////// -->
+      <section id="colaborar" class="my-5">
+        <div class="container pb-5">
+          <!--title-->
+          <div class="title my-4 my-md-5 d-flex flex-column align-items-center">
+            <h2
+              class="h1 text-center fw-bold pt-2 pt-md-5"
+              id="colaborar-title"
+            >
+              Colaborar con El Obraje
+            </h2>
+            <div class="line d-flex justify-content-center">
+              <div></div>
+            </div>
+          </div>
+          <!--end title-->
+          <!--content-->
+          <div class="row p-3 pt-md-0">
+            <div class="col-md-6 p-md-4">
+              <p class="lead">
+                <em> Vos podés ayudar a que el Colegio siga creciendo </em>
+              </p>
+              <h3 class="h3 fw-bold text-primary mb-4">
+                Podés colaborar de alguna de las siguientes maneras:
+              </h3>
+              <ul>
+                <li>Transferir tu donación a <br> <strong>Cbu: 0720268320000000358004</strong><br><strong>Alias: JUEGO.GALGO.FAUNA</strong></li>
+                <li>
+                  Acercar tu donación a la institución (Calle Rawson y Ruta
+                  C-45) de lunes a viernes de 8:30 hs a 13:00 hs
+                </li>
+                <li>
+                  Participar de los eventos para recaudar fondos que realicemos
+                  en el futuro.
+                </li>
+                <li>
+                  Compartir con familiares y amigos las novedades del Colegio
+                  para que ellos también puedan colaborar.
+                </li>
+              </ul>
+               <p class="lead text-center">
+                <em> ¡Muchas gracias por tu ayuda! </em>
+              </p>
+            </div>
+            <div class="col-md-6 bg-primary text-white p-2 p-md-4">
+              <h3 class="h3 text-center mb-4">Dejanos tu mensaje</h3>
+              <form action="enviar.php" method="post">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control my-2"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                    placeholder="Tu nombre"
+                    name="nombre"
+                  />
+                  <input
+                    type="email"
+                    class="form-control my-2"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                    placeholder="Tu correo"
+                    name="email"
+                  />
+                </div>
+                <div class="form-group">
+                  <textarea
+                    class="form-control my-2"
+                    id="exampleFormControlTextarea1"
+                    rows="3"
+                    placeholder="Tu mensaje"
+                    name="message"
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  class="btn btn-outline-light my-2 mx-auto"
+                >
+                  Enviar
+                </button>
+              </form>
+            </div>
+          </div>
+          <!--end content-->
+        </div>
+      </section>
+      <!-- ////// END COLABORAR ////// -->
+
+      <!-- ////// START SECTION ////// -->
+      <!-- ////// END SECTION ////// -->
+    </main>
+    <!-- ////// END MAIN ////// -->
+
+    <!-- ////// START FOOTER ////// -->
+    <footer id="footer" class="text-center fs-3 py-3 mt-5">
+      <a
+        href="http://www.elobraje.edu.ar/sitiojoomla2/index.php"
+        target="_blank"
+        class="text-white"
+      >
+        <i class="fas fa-globe"></i>
+      </a>
+      <a
+        href="https://www.facebook.com/El-Obraje-Alta-Gracia-C%C3%B3rdoba-164996846870832/"
+        target="_blank"
+        class="text-white"
+      >
+        <i class="fab fa-facebook"></i>
+      </a>
+
+      <a
+        href="https://www.youtube.com/channel/UC_J3ewcI3gmRJqe0Xh6reLQ"
+        target="_blank"
+        class="text-white"
+      >
+        <i class="fab fa-youtube"></i>
+      </a>
+
+      <a
+        href="https://www.instagram.com/instituto_elobraje/"
+        target="_blank"
+        class="text-white"
+      >
+        <i class="fab fa-instagram"></i>
+      </a>
+    </footer>
+    <!-- ////// END FOOTER ////// -->
+
+    <!--/////SCRIPTS//////-->
+    <!-- bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+    <script src="animations-gsap.js"></script>
+    <!-- js -->
+    <script src="app.js"></script>
+  </body>
+</html>

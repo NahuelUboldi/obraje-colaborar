@@ -1,0 +1,14 @@
+@use "../custom" as *;
+
+#footer {
+  background-color: $blue-dark;
+  a {
+    text-decoration: none;
+    opacity: 0.5;
+    transition: opacity 0.5s;
+    margin: 0 1rem;
+  }
+  a:hover {
+    opacity: 0.9;
+  }
+}

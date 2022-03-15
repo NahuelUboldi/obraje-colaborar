@@ -1,0 +1,12 @@
+@use "../custom" as *;
+
+#por-que {
+  background-color: $gray-200;
+  .container {
+    ul {
+      li {
+        margin: 1rem 0;
+      }
+    }
+  }
+}
