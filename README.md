@@ -1,6 +1,6 @@
 # El Obraje Colaborar
 
-![Project Image](https://nahueluboldi.com/img/proyects/obraje-colaborar.png)
+![Project Image](https://nahueluboldi.com/img/proyects/obraje-colaborar/all-devices.png)
 
 ---
 
